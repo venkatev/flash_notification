@@ -1,0 +1,107 @@
+/* 
+    Document   : flash_manager
+    Created on : 9 May, 2009, 1:20:41 PM
+    Author     : vikram
+    Description:
+        Styles for flash messages and ActiveRecord error messages.
+*/
+
+#flash_container {
+  margin: 0 1em 1em;
+}
+
+#flash_container a.flash_view_link {
+  font-size: 1em;
+}
+
+.success_flash {
+	background-color:#FFFFAA;
+	border:1px solid #CCCC55;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin:0 0 2em;
+	padding:0.75em;
+}
+
+#flash_container span.info {
+    background-image: url(/images/action_arrow.gif);
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    clear: both;
+    float: left;
+    font-size: 0.8em;
+    margin-left: 34px;
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#flash_container .success_flash span.info {
+    margin-left: 15px;
+}
+
+.error_flash {
+	background:#FFEBE8 none repeat scroll 0 0;
+	border:1px solid #DD3C10;
+	margin:0 0 2em;
+	padding:0.75em;
+	font-size: 1.2em;
+  font-weight: bold;
+}
+
+.error_flash .notice_msg {
+    /*background-image: url(/images/error_icon.png);
+    background-position: 0 -6px;
+    background-repeat: no-repeat;
+    padding-left: 35px; */
+}
+
+.local_flash {
+  font-size:12px;
+  font-weight:normal;
+}
+
+a.hide_flash {
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-top: 2px;
+    text-decoration: underline;
+}
+
+#errorExplanation, .errorExplanation {
+    background-color: #FFEEBB;
+    border: 1px solid #CCAA88;
+    color: #900;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 12px;
+    float: left;
+}
+
+#errorExplanation p {
+    margin-bottom: 5px;
+}
+
+#errorExplanation h2 {
+  color:#990000;
+  font-size:1.2em;
+  font-weight:bold;
+  line-height:20px;
+  padding:0;
+}
+
+#errorExplanation ul {
+  list-style-type:disc;
+  margin:10px 0 0 20px;
+}
+
+/* The container div need not be a block element for fieldWithErrors */
+div.fieldWithErrors {
+  display: inline;
+}
+
+.fieldWithErrors input, .fieldWithErrors textarea {
+  border: 2px solid #A00;
+}
